@@ -72,12 +72,15 @@ Type this commands to change the information that is going to be included in you
 '''
 git config --config user.fullname My New Name
 '''
+
 '''
 git config --config user.email my_new@email.com
 '''
+
 '''
 git config --config user.environ my-environment
 '''
+
 This will not change the readmes created previously.
 
 ## Files
