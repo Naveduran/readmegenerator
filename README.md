@@ -31,7 +31,7 @@ It is a general description of the repository. readmeg ask the user what it is.
 It includes a spreadsheet with the names and descriptions of every file and function in the directory, specially man pages, C header files, C functions, and Python scripts (and counting). The description of this files are based on the description of the file written inside each file, looking like this:
 |File|Description|
 |:-:|:-:|
-|file1|Description depending on the type of file|
+|file1|Description depending on the type of the file.|
 #### Python scripts
 Takes the first multiline comment, surrounded by """ or by ''' as description.
 
