@@ -10,7 +10,7 @@ It includes title, description, files, environment, and authors.
 ## Installation
 Move the file readmeg.py to the path /usr/local/bin. If you are in linux, you can use the next command:
 ```
-$ sudo mv readmeg.py /usr/local/bin
+$ cp readmeg.py readmeg | sudo mv readmeg.py /usr/local/bin
 ```
 ## How to use
 You need to go to the directory where you want to create the readme file. Then you can type this in the command line:
