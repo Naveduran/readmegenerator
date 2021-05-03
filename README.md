@@ -14,7 +14,7 @@ The readmeg writes the basic structure of a readme file filling all the content 
 
 Move the file readmeg.py to the path /usr/local/bin. If you are in linux, you can use the next command:
 ```
-$ cp readmeg.py readmeg && sudo mv readmeg.py /usr/local/bin
+$ cp readmeg.py readmeg && sudo mv readmeg /usr/local/bin
 ```
 
 ## How to use
