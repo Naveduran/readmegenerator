@@ -1,9 +1,7 @@
 # Readme Generator
 
 We are bored of write the same things once and once again. We trust in the comments made inside of our files, and we decided to automate the boring stuff. 
-
 Why to use this? Quick, Easy, Automatic: Only once three questions.
-
 ![](https://miro.medium.com/max/500/1*TKt92huSBbSnbRNuAVTx_A.jpeg)
 
 ## Description
@@ -18,7 +16,6 @@ $ cp readmeg.py readmeg && sudo mv readmeg /usr/local/bin
 ```
 
 ## How to use
-
 You need to go to the directory where you want to create the readme file. Then you can type this in the command line:
 ```
 $ readmeg
@@ -29,59 +26,59 @@ $ readmeg The description of the reporitory
 ```
 
 ## What readme's section are included?
-### Title
-  Readmeg takes the name of the directory, replace special characters for spaces, and capitalize the name.
-### Description
+
+  ### Title
+  Takes the name of the directory, changing - and _ for spaces. 
+
+  ### Description
   It is a general description of the repository. readmeg ask the user what it is.
-### Files
-  It includes a spreadsheet with the names and descriptions of every file and function in the directory, specially man pages, C header files, C functions, and Python scripts (and counting). The description of this files are based on the description of the file written inside each file, looking like this:
-|File|Description|
-|:-:|:-:|
-|file1|Description depending on the type of the file.|
-#### Python scripts
+
+  ### Files
+  It includes a spreadsheet with the names and descriptions of every file and function in the directory, specially man pages, C header files, C functions, and Python scripts.
+  The name of the file can be clicked to open the file while you are looking the readme in git hub. 
+  The description of each file is based on the description of the file written in the first multiline comment of the file, looking like this:
+
+  |File|Description|
+  |:-:|:-:|
+  |[file1](./file)|Description depending on the type of the file.|
+
+  #### Python scripts
   Takes the first multiline comment, surrounded by """ or by ''' as description.
 
-#### C functions
+  #### C functions
   Takes all the multiline comments of the file to list all the functions written in the file. The comments needs to match the format required by the ANSI 90 standard:
-```
-/**
-* function_name - first line of description
-* second line of description (optional)
-* @parameter (optional)
-* Return: returned value (optional)
-*/
-```
-Let us know which other kind of programming files you want us to automate here: https://twitter.com/NaVeDuran1 
+  ```
+  /**
+  * function_name - first line of description
+  * second line of description (optional)
+  * @parameter (optional)
+  * Return: returned value (optional)
+  */
+  ```
+  Let us know which other kind of programming files you want us to automate here: https://twitter.com/NaVeDuran1 
 
-### Environment
+  ### Environment
+  The first time the program is executed is going to ask you the environ where the repository was developed.
+  If you are from Holberton write:
+  '''
+  Ubuntu 14.06.6 LTS
+  '''
 
-The first time the program is executed is going to ask you the environ where the repository was developed.
-If you are from Holberton write:
-'''
-Ubuntu 14.06.6 LTS
-'''
+  ### Authors
+  Readmeg reads the git configuration variables 'user.fullname', 'user.email' and 'user.environ'. If those aren't created, readmeg asks the full name of the user.
 
-### Authors
-
-Readmeg reads the git configuration variables 'user.fullname', 'user.email' and 'user.environ'. If those aren't created, readmeg asks the full name of the user.
-
-### Changing Author, Email or Environment:
-
-Type this commands to change the information that is going to be included in your subsequent readmes:
-
-'''
-$ git config --config user.fullname My New Name
-'''
-
-'''
-$ git config --config user.email my_new@email.com
-'''
-
-'''
-$ git config --config user.environ my-environment
-'''
-
-This will not change the readmes created previously.
+  ### Changing Author, Email or Environment:
+  Type this commands to change the information that is going to be included in your subsequent readmes:
+  '''
+  $ git config --config user.fullname My New Name
+  '''
+  '''
+  $ git config --config user.email my_new@email.com
+  '''
+  '''
+  $ git config --config user.environ my-environment
+  '''
+  This will not change the readmes created previously.
 
 ## Files
 The files contained in this repository are:
@@ -92,9 +89,15 @@ The files contained in this repository are:
 
 ## Environment
 This project has been tested on Ubuntu 14.06.6 LTS
+
 ## Version
 Released on April 29th of 2021.
+- Links of the files added on May 6th.
 
 ## Authors
 * **Nicolás Urrea Rangel:** - [Email](nico15935746@gmail.com)
 * **Natalia Vera Duran:** - [Email](naveduran@gmail.com)
+* **Juan David Avila Caycedo:** - [Email](juanavila12.0308@gmail.com)
+
+## Acknowledgment
+By all your interest support, advice, and testing: [Sergio Ramos] - (https://github.com/Sergioarg), [Alexander Forero] - (https://github.com/ForeroAlexander), [Jean Pierre] - (https://github.com/jeanpierreba) and [Holberton] - (https://www.holbertonschool.com/), our programming school, for making us to create a repo for day and then ask for readmes in each.
