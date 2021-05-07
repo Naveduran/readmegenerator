@@ -69,8 +69,9 @@ if descript[-1] != ".":
 
 # Write the sections 'Title', 'Description' and the beginning of 'Files'
 
-text = "# {}\n## Description\n{}\n\n## Files\nThe files contained in this \
-repository are:\n\n|File|Description|\n|:-:|:-:|\n".format(title, descript)
+text = '''# {}\n## Description\n{}\n\n## Files\nThe files contained in 
+this repository are:\n\n|File|Description|\n|:-:|:-:|\n'''
+.format(title, descript)
 
 # Write the names and description of the files in the table
 
@@ -79,16 +80,17 @@ for file in files:
 # Description of man pages
 
     if file[:3] == 'man':
-        text += "|[{}](./{})|Contains the manual to use the program with \
-detailed description, required parameters, functioning, and return \
-values.\n".format(file, file)
+        text += '''|[{}](./{})|Contains the manual to use the program with
+        detailed description, required parameters, functioning, and return 
+        values.\n'''.format(file, file)
 
 # Description of header files
 
     elif file[-2:] == '.h':
-        text += "|[{}](./{})|Contains all the functions and macros that are \
-going to be included in the program, individually created for this program,\
-or inherited from the standard libraries|\n".format(file, file)
+        text += '''|[{}](./{})|Contains all the functions and macros that
+        are going to be included in the program, individually created for 
+        this program, or inherited from the standard 
+        libraries|\n'''.format(file, file)
 
 # Don't include readme files in the list'
 
@@ -117,8 +119,8 @@ or inherited from the standard libraries|\n".format(file, file)
 # Description of C functions
         elif file[-2:] == '.c':
             try: # THIS DON'T NEED TO BE READ
-                c = "awk \
-'/\*\* */,/\* @/||/\*@/||/eturn/||/ \*\//||/ \* \*/' {}"
+                c = '''awk '/\*\* */,/\* @/||/\*@/||
+                /eturn/||/ \*\//||/ \* \*/' {}'''
                 description = str(popen(c.format(file))
                                   .read()
                                   .split("\n")[1:-2])[2:-2]\
