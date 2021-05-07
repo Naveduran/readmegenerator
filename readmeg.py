@@ -41,15 +41,15 @@ environ = popen("git config --get user.environ")\
 # Only the first time for agility
 
 if author == '':
-    popen("git config --global user.fullname \"{}\""
+    popen("git config --global user.fullname \"{}\""\
           .format(input("Write your full name:")))
 
 if email == '':
-    popen("git config --global user.email \"{}\""
+    popen("git config --global user.email \"{}\""\
           .format(input("Write your github email:")))
 
 if environ == '':
-    popen("git config --global user.environ \"{}\""
+    popen("git config --global user.environ \"{}\""\
           .format(input("Write environ:")))
 
 # Ask for the general description of the repository and give the proper format
@@ -69,7 +69,7 @@ if descript[-1] != ".":
 
 # Write the sections 'Title', 'Description' and the beginning of 'Files'
 
-text = '''# {}\n## Description\n{}\n\n## Files\nThe files contained in 
+text = '''# {}\n## Description\n{}\n\n## Files\nThe files contained in \
 this repository are:\n\n|File|Description|\n|:-:|:-:|\n'''
 .format(title, descript)
 
@@ -80,16 +80,16 @@ for file in files:
 # Description of man pages
 
     if file[:3] == 'man':
-        text += '''|[{}](./{})|Contains the manual to use the program with
-        detailed description, required parameters, functioning, and return 
+        text += '''|[{}](./{})|Contains the manual to use the program with \
+        detailed description, required parameters, functioning, and return \
         values.\n'''.format(file, file)
 
 # Description of header files
 
     elif file[-2:] == '.h':
-        text += '''|[{}](./{})|Contains all the functions and macros that
-        are going to be included in the program, individually created for 
-        this program, or inherited from the standard 
+        text += '''|[{}](./{})|Contains all the functions and macros that \
+        are going to be included in the program, individually created for \
+        this program, or inherited from the standard \
         libraries|\n'''.format(file, file)
 
 # Don't include readme files in the list'
@@ -119,7 +119,7 @@ for file in files:
 # Description of C functions
         elif file[-2:] == '.c':
             try: # THIS DON'T NEED TO BE READ
-                c = '''awk '/\*\* */,/\* @/||/\*@/||
+                c = '''awk '/\*\* */,/\* @/||/\*@/||\
                 /eturn/||/ \*\//||/ \* \*/' {}'''
                 description = str(popen(c.format(file))
                                   .read()
