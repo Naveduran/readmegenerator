@@ -98,7 +98,6 @@ Released on April 29th of 2021.
 ## Authors
 * **Nicolás Urrea Rangel:** [Email](nico15935746@gmail.com)
 * **Natalia Vera Duran:** [Email](naveduran@gmail.com)
-* **Juan David Avila Caycedo:** [Email](juanavila12.0308@gmail.com)
 
 ## Acknowledgment
-By all your interest support, advice, and testing: [Sergio Ramos](https://github.com/Sergioarg), [Alexander Forero](https://github.com/ForeroAlexander), [Jean Pierre](https://github.com/jeanpierreba) and [Holberton](https://www.holbertonschool.com/), our programming school, for making us to create a repo for day and then ask for readmes in each.
+By all your interest support, advice, and testing: [Sergio Ramos](https://github.com/Sergioarg), [Alexander Forero](https://github.com/ForeroAlexander), [Jean Pierre](https://github.com/jeanpierreba) [Juan David Avila]() and [Holberton](https://www.holbertonschool.com/), our programming school, for making us to create a repo for day and then ask for readmes in each.
