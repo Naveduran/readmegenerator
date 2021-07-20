@@ -11,17 +11,17 @@ The readmeg writes the basic structure of a readme file filling all the content 
 
 Move the file readmeg.py to the path /usr/local/bin. If you are in linux, you can use the next command:
 ```
- cp readmeg.py readmeg && sudo mv readmeg /usr/local/bin
+cp readmeg.py readmeg && sudo mv readmeg /usr/local/bin
 ```
 
 ## How to use
 You need to go to the directory where you want to create the readme file. Then you can type this in the command line:
 ```
- readmeg
+readmeg
 ```
 or
 ```
- readmeg The description of the reporitory
+readmeg The description of the reporitory
 ```
 
 ## What readme's section are included?
@@ -68,15 +68,15 @@ or
 
   ### Changing Author, Email or Environment:
   Type this commands to change the information that is going to be included in your subsequent readmes:
-  '''
-   git config --config user.fullname My New Name
-  '''
-  '''
-   git config --config user.email my_new@email.com
-  '''
-  '''
-   git config --config user.environ my-environment
-  '''
+  ```
+  git config --config user.fullname My New Name
+  ```
+  ```
+  git config --config user.email my_new@email.com
+  ```
+  ```
+  git config --config user.environ my-environment
+  ```
   This will not change the readmes created previously.
 
 ## Environment
