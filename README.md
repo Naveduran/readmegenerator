@@ -3,27 +3,25 @@
 We are bored of write the same things once and once again. We trust in the comments made inside of our files, and we decided to automate the boring stuff. 
 Why to use this? Quick, Easy, Automatic: Only once three questions.
 
-![](https://miro.medium.com/max/500/1*TKt92huSBbSnbRNuAVTx_A.jpeg)
-
-## Description
-
 The readmeg writes the basic structure of a readme file filling all the content and getting ready to show the awesome code that you do. It includes title, description, files, environment, and authors. 
+
+![]()
 
 ## Installation
 
 Move the file readmeg.py to the path /usr/local/bin. If you are in linux, you can use the next command:
 ```
-$ cp readmeg.py readmeg && sudo mv readmeg /usr/local/bin
+ cp readmeg.py readmeg && sudo mv readmeg /usr/local/bin
 ```
 
 ## How to use
 You need to go to the directory where you want to create the readme file. Then you can type this in the command line:
 ```
-$ readmeg
+ readmeg
 ```
 or
 ```
-$ readmeg The description of the reporitory
+ readmeg The description of the reporitory
 ```
 
 ## What readme's section are included?
@@ -71,33 +69,19 @@ $ readmeg The description of the reporitory
   ### Changing Author, Email or Environment:
   Type this commands to change the information that is going to be included in your subsequent readmes:
   '''
-  $ git config --config user.fullname My New Name
+   git config --config user.fullname My New Name
   '''
   '''
-  $ git config --config user.email my_new@email.com
+   git config --config user.email my_new@email.com
   '''
   '''
-  $ git config --config user.environ my-environment
+   git config --config user.environ my-environment
   '''
   This will not change the readmes created previously.
-
-## Files
-The files contained in this repository are:
-
-|File|Description|
-|:-:|:-:|
-|README.md| This are the instructions for use, non writtable for avoid mistakes.|
 
 ## Environment
 This project has been tested on Ubuntu 14.06.6 LTS
 
-## Version
-Released on April 29th of 2021.
-- Links of the files added on May 6th.
-
 ## Authors
 * **Nicolás Urrea Rangel:** [Email](nico15935746@gmail.com)
 * **Natalia Vera Duran:** [Email](naveduran@gmail.com)
-
-## Acknowledgment
-By all your interest support, advice, and testing: [Sergio Ramos](https://github.com/Sergioarg), [Alexander Forero](https://github.com/ForeroAlexander), [Jean Pierre](https://github.com/jeanpierreba) [Juan David Avila]() and [Holberton](https://www.holbertonschool.com/), our programming school, for making us to create a repo for day and then ask for readmes in each.
